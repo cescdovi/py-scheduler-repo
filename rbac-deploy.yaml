@@ -34,4 +34,6 @@ spec:
       containers:
       - name: scheduler
         image: my-py-scheduler:latest
+        imagePullPolicy: IfNotPresent #por defecto intenta descargarla del docker hub y al no exisitir da error
         args: ["--scheduler-name","my-scheduler"]
+
